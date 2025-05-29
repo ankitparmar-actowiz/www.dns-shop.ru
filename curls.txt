@@ -1,0 +1,27 @@
+import requests
+
+cookies = {
+    'qrator_jsr': '1748500363.667.rjrsEKEwsqkBweqA-j3hq0iupd4tg2e71qm177cl3m8ka25pl-00',
+    'qrator_jsid': '1748500363.667.rjrsEKEwsqkBweqA-qruglb4gfe5s94efaohep98u55oa2tju',
+}
+
+headers = {
+    'accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7',
+    'accept-language': 'en-US,en;q=0.9',
+    'cache-control': 'max-age=0',
+    'priority': 'u=0, i',
+    'sec-ch-ua': '"Chromium";v="136", "Google Chrome";v="136", "Not.A/Brand";v="99"',
+    'sec-ch-ua-mobile': '?0',
+    'sec-ch-ua-platform': '"Windows"',
+    'sec-fetch-dest': 'document',
+    'sec-fetch-mode': 'navigate',
+    'sec-fetch-site': 'same-origin',
+    'upgrade-insecure-requests': '1',
+    'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36',
+    # 'cookie': 'qrator_jsr=1748500363.667.rjrsEKEwsqkBweqA-j3hq0iupd4tg2e71qm177cl3m8ka25pl-00; qrator_jsid=1748500363.667.rjrsEKEwsqkBweqA-qruglb4gfe5s94efaohep98u55oa2tju',
+}
+
+response = requests.get('https://www.dns-shop.ru/catalog/17a8a01d16404e77/smartfony/', cookies=cookies, headers=headers)
+
+render true
+super false
